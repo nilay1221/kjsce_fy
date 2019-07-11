@@ -1,0 +1,19 @@
+{% extends "layoutr.html" %}
+{% block content %}
+    {% for re in ref %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">            
+             <small class="text-muted">{{ re.group }}</small>
+            </div>
+            <h2>{{ re.sub }}</h2>
+            <a href="#"class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbardrop">Books</a>
+          <div class="dropdown-menu" >
+            <a class="dropdown-item" href={{ re.l1 }}>{{ re.b1 }}</a>
+            <a class="dropdown-item" href={{ re.l2 }}>{{ re.b2 }}</a>
+            <a class="dropdown-item" href={{ re.l3 }}>{{ re.b3 }}</a>
+          </div>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
