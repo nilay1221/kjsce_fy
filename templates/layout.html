@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="index.css">
+    <title>KJSCE FY</title>
+  <style>
+    .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+
+.col-md-1{
+  border-right: 1px solid #ccc
+}
+
+  </style>
+  </head>
+  <body>
+          <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- <div class="container-fluid"> -->
+                <a href="#" class="navbar-brand">KJSCE</a>
+                <ul class="navbar-nav ml-auto">
+                  <li class="active"><a href="/" class="nav-link">Home</a></li>
+                  <li class="nav-item dropdown">
+                    <a href="#"class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbardrop">Shop</a>
+                    <div class="dropdown-menu" >
+                      <a class="dropdown-item" href="#">Books</a>
+                      <a class="dropdown-item" href="#">Accessories</a>
+                    </div>
+                  </li>
+                  <li class="nav-item"><a href="contact" class="nav-link">Contact Us</a></li>
+                  <li class="nav-item"><a href="contact" class="nav-link">Refernce Links</a></li>
+                  
+                </ul>
+            <!-- </div> -->
+          </nav>
+          {%block content%}{%endblock%}
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
